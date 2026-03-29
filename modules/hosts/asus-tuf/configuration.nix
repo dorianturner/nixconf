@@ -6,6 +6,7 @@
       self.nixosModules.asus-tuf-hardware
       self.nixosModules.niri
       self.nixosModules.vscode
+      self.nixosModules.devtools
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
