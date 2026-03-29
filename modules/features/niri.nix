@@ -38,8 +38,8 @@
 
 	  "Mod+WheelScrollDown".focus-column-left = null;
           "Mod+WheelScrollUp".focus-column-right = null;
-          "Mod+Ctrl+WheelScrollDown".focus-workspace-down = null;
-          "Mod+Ctrl+WheelScrollUp".focus-workspace-up = null;
+          "Mod+Shift+WheelScrollDown".focus-workspace-down = null;
+          "Mod+Shift+WheelScrollUp".focus-workspace-up = null;
 
           "Mod+Shift+H".move-column-left = null;
           "Mod+Shift+L".move-column-right = null;
