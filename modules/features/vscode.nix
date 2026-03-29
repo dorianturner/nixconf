@@ -11,6 +11,7 @@
         vscodevim.vim
         yzhang.markdown-all-in-one
         bbenoist.nix
+        vscode-icons-team.vscode-icons
       ];
     
     };

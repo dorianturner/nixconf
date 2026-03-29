@@ -8,7 +8,7 @@
 
   perSystem = { pkgs, lib, self', ... }: {
     packages.niri = inputs.wrapper-modules.wrappers.niri.wrap {
-      inherit pkgs; # THIS PART IS VERY IMPORTAINT, I FORGOT IT IN THE VIDEO!!!
+      inherit pkgs;
       settings = {
         spawn-at-startup = [
           (lib.getExe self'.packages.noctalia)
@@ -73,21 +73,11 @@
           "Mod+Shift+0".move-column-to-workspace = "w9";
         };
 
-	workspaces = 
-	  let
-            settings = {layout.gaps = 5;};
-          in {
-            "w0" = settings;
-            "w1" = settings;
-            "w2" = settings;
-            "w3" = settings;
-            "w4" = settings;
-            "w5" = settings;
-            "w6" = settings;
-            "w7" = settings;
-            "w8" = settings;
-            "w9" = settings;
-          };
+        workspaces = builtins.listToAttrs (
+          map (n: { name = "w${toString n}"; value = { layout.gaps = 5; }; })
+            (lib.range 0 9)
+          );
+        
       };
     };
   };
