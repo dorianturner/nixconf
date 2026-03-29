@@ -21,11 +21,15 @@
         layout.gaps = 5;
 
         binds = {
-          "Mod+Q".spawn-sh = lib.getExe pkgs.kitty;
+          "Mod+T".spawn-sh = lib.getExe pkgs.kitty;
           "Mod+C".close-window = null;
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.noctalia} ipc call launcher toggle";
+          "Mod+M".quit = null;  
 
-	  # Movement
+          "Mod+F".maximize-column = null;
+          "Mod+Shift+F".fullscreen-window = null;
+
+      	  # Movement
           "Mod+H".focus-column-left = null;
           "Mod+L".focus-column-right = null;
           "Mod+K".focus-window-up = null;
@@ -36,7 +40,7 @@
           "Mod+Up".focus-window-up = null;
           "Mod+Down".focus-window-down = null;
 
-	  "Mod+WheelScrollDown".focus-column-left = null;
+	        "Mod+WheelScrollDown".focus-column-left = null;
           "Mod+WheelScrollUp".focus-column-right = null;
           "Mod+Shift+WheelScrollDown".focus-workspace-down = null;
           "Mod+Shift+WheelScrollUp".focus-workspace-up = null;
