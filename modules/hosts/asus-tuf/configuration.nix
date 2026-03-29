@@ -5,6 +5,7 @@
     imports = [
       self.nixosModules.asus-tuf-hardware
       self.nixosModules.niri
+      self.nixosModules.greeter
       self.nixosModules.vscode
       self.nixosModules.devtools
     ];
