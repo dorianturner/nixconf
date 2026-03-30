@@ -8,6 +8,8 @@
       self.nixosModules.greeter
       self.nixosModules.vscode
       self.nixosModules.devtools
+      self.nixosModules.discord
+      self.nixosModules.anki
     ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
