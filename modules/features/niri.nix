@@ -20,6 +20,8 @@
 
         layout.gaps = 5;
 
+        screenshot-path = "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png";
+
         binds = {
           "Mod+L".spawn-sh = "${lib.getExe pkgs.swaylock} -f -c 000000";
           "Mod+R".spawn-sh = "${lib.getExe pkgs.rofi} -show drun -theme gruvbox-dark-soft";
@@ -27,6 +29,8 @@
           "Mod+C".close-window = null;
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.noctalia} ipc call launcher toggle";
           "Mod+M".quit = null;  
+
+          "Mod+Shift+S".screenshot = null;
 
           "Mod+F".maximize-column = null;
           "Mod+Shift+F".fullscreen-window = null;
