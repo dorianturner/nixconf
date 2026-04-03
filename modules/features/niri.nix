@@ -18,6 +18,8 @@
 
         input.keyboard.xkb.layout = "gb,ua";
 
+        input.touchpad.natural-scroll = null;
+
         layout.gaps = 5;
 
         screenshot-path = "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png";
@@ -38,8 +40,8 @@
       	  # Movement
           "Mod+Left".focus-column-left = null;
           "Mod+Right".focus-column-right = null;
-          "Mod+Up".focus-window-up = null;
-          "Mod+Down".focus-window-down = null;
+          "Mod+Up".focus-workspace-up = null;
+          "Mod+Down".focus-workspace-down = null;
 
 	        "Mod+WheelScrollDown".focus-column-left = null;
           "Mod+WheelScrollUp".focus-column-right = null;
