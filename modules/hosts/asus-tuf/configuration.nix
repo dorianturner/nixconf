@@ -9,6 +9,7 @@
       self.nixosModules.vscode
       self.nixosModules.devtools
       self.nixosModules.discord
+      self.nixosModules.steam
       self.nixosModules.anki
     ];
 
