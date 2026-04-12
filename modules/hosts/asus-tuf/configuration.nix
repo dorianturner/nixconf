@@ -1,17 +1,7 @@
 { self, inputs, ... }: {
 
   flake.nixosModules.asus-tuf-configuration = { config, pkgs, ... }: {
-    # import any other modules from here
-    imports = [
-      self.nixosModules.asus-tuf-hardware
-      self.nixosModules.niri
-      self.nixosModules.greeter
-      self.nixosModules.vscode
-      self.nixosModules.devtools
-      self.nixosModules.discord
-      self.nixosModules.steam
-      self.nixosModules.anki
-    ];
+    imports = [ self.nixosModules.asus-tuf-hardware ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
