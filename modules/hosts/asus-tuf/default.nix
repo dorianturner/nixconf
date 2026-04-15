@@ -13,6 +13,7 @@
       self.nixosModules.discord
       self.nixosModules.steam
       self.nixosModules.anki
+      self.nixosModules.nettools
       ];
 
   };
