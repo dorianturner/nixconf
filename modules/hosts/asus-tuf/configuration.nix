@@ -66,7 +66,7 @@
     users.users.dorian = {
       isNormalUser = true;
       description = "dorian";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "wireshark" ];
       packages = with pkgs; [
       #  thunderbird
       ];
