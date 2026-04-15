@@ -11,7 +11,7 @@
       inherit pkgs;
       settings = {
         spawn-at-startup = [
-          (lib.getExe self'.packages.noctalia)
+          (lib.getExe inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default)
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -29,7 +29,7 @@
           "Mod+R".spawn-sh = "${lib.getExe pkgs.rofi} -show drun -theme gruvbox-dark-soft";
           "Mod+T".spawn-sh = lib.getExe pkgs.kitty;
           "Mod+C".close-window = null;
-          "Mod+S".spawn-sh = "${lib.getExe self'.packages.noctalia} ipc call launcher toggle";
+          "Mod+S".spawn-sh = "${lib.getExe inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default} ipc call launcher toggle";
           "Mod+M".quit = null;  
 
           "Mod+Shift+S".screenshot = null;
