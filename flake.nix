@@ -10,6 +10,8 @@
 
     noctalia.url = "github:noctalia-dev/noctalia-shell";
     noctalia.inputs.nixpkgs.follows = "nixpkgs";
+
+    nix-mineral.url = "github:cynicsketch/nix-mineral/";
   
   };
 

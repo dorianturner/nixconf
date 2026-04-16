@@ -10,6 +10,9 @@
       self.nixosModules.noctalia
       self.nixosModules.hyprlock
       self.nixosModules.greeter
+
+      self.nixosModules.nix-mineral
+
       self.nixosModules.vscode
       self.nixosModules.devtools
       self.nixosModules.discord
