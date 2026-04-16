@@ -12,6 +12,7 @@
       self.nixosModules.greeter
 
       self.nixosModules.nix-mineral
+      self.nixosModules.kloak
 
       self.nixosModules.vscode
       self.nixosModules.devtools
