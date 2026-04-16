@@ -10,6 +10,7 @@
       libgcc
 
       # c/c++
+      gnumake
       gcc
       gdb
       cmake
