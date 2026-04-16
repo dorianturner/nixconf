@@ -5,8 +5,6 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
 
-    wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-
     hjem.url = "github:feel-co/hjem";
     hjem.inputs.nixpkgs.follows = "nixpkgs";
 
