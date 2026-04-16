@@ -25,7 +25,7 @@
         screenshot-path = "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png";
 
         binds = {
-          "Mod+L".spawn-sh = "${lib.getExe pkgs.swaylock} -f -c 000000";
+          "Mod+L".spawn-sh = "${lib.getExe pkgs.hyprlock}";
           "Mod+R".spawn-sh = "${lib.getExe pkgs.rofi} -show drun -theme gruvbox-dark-soft";
           "Mod+T".spawn-sh = lib.getExe pkgs.kitty;
           "Mod+C".close-window = null;

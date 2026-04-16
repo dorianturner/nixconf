@@ -7,6 +7,7 @@
       self.nixosModules.asus-tuf-configuration 
 
       self.nixosModules.niri
+      self.nixosModules.hyprlock
       self.nixosModules.greeter
       self.nixosModules.vscode
       self.nixosModules.devtools
