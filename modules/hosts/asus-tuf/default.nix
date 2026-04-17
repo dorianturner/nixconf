@@ -12,7 +12,7 @@
       self.nixosModules.greeter
 
       self.nixosModules.nix-mineral
-      self.nixosModules.kloak
+      # self.nixosModules.kloak broken as only wlroots
 
       self.nixosModules.vscode
       self.nixosModules.devtools

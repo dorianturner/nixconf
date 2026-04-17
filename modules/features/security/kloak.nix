@@ -11,10 +11,6 @@
 
     environment.systemPackages = [ pkgs.kloak ];
 
-    # Enable user service support
-    services.dbus.enable = true;
-
-
     # WIP, neesd root to run, but root doesn't have the wayland environment vars :(
     # systemd.services.kloak = {
     #   description = "Kloak input anonymization";
