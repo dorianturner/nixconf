@@ -8,6 +8,9 @@
       pkgs.kitty
     ];
 
+    programs.thunar.enable = true;
+    programs.yazi.enable = true;
+
     hjem.users.dorian.files.".config/niri/config.kdl".source = ./niri.kdl;
   };
 }
