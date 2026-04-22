@@ -12,7 +12,22 @@ input {
 }
 
 layout {
-    gaps 5
+    gaps 7
+}
+
+window-rule {
+    geometry-corner-radius 3
+
+    draw-border-with-background false
+
+    focus-ring {
+        on
+        width 2
+        active-gradient from="#e8c03c" to="#ca3a27" angle=45
+        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        urgent-gradient from="#800" to="#a33" angle=45
+    }
+
 }
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"

@@ -5,7 +5,6 @@
     environment.systemPackages = [
       pkgs.xwayland-satellite
       pkgs.rofi
-      pkgs.kitty
     ];
 
     programs.thunar.enable = true;

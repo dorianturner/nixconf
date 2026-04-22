@@ -31,6 +31,7 @@
         yzhang.markdown-all-in-one
         bbenoist.nix
         vscode-icons-team.vscode-icons
+        ms-vscode.cpptools
       ] 
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
