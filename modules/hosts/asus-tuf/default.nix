@@ -9,8 +9,9 @@
       self.nixosModules.niri
       self.nixosModules.noctalia
       self.nixosModules.hyprlock
-      self.nixosModules.greeter
       self.nixosModules.kitty
+      self.nixosModules.greeter
+      self.nixosModules.plymouth
 
       self.nixosModules.nix-mineral
       # self.nixosModules.kloak broken as only wlroots

@@ -30,6 +30,13 @@ window-rule {
 
 }
 
+window-rule {
+    match app-id="firefox"
+    match app-id="code"
+
+    open-maximized true
+}
+
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png"
 
 spawn-at-startup "noctalia-shell"
@@ -38,6 +45,7 @@ spawn-at-startup "xwayland-satellite"
 binds {
     Mod+L { spawn "hyprlock"; }
     Mod+R { spawn "rofi" "-show" "drun" "-theme" "gruvbox-dark-soft"; }
+    Mod+E { spawn "thunar"; }
     Mod+T { spawn "kitty"; }
     Mod+C { close-window; }
     Mod+M { quit; }
