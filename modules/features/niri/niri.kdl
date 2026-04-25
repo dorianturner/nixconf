@@ -33,6 +33,8 @@ window-rule {
 window-rule {
     match app-id="firefox"
     match app-id="code"
+    match app-id="steam"
+    match app-id="vesktop"
 
     open-maximized true
 }
