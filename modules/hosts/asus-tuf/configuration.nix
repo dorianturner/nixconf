@@ -4,6 +4,9 @@
     imports = [ self.nixosModules.asus-tuf-hardware ];
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+    hardware.bluetooth.enable = true;
+    services.blueman.enable = true;
   
     # Bootloader.
     boot.loader.systemd-boot.enable = true;
