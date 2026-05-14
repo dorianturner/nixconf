@@ -21,26 +21,37 @@
 {
   flake.nixosModules.vscode = { pkgs, ... }: {
 
-    programs.vscode = {
-      enable = true;
+    # programs.vscode = {
+    #   enable = true;
 
-      extensions = 
-      with pkgs.vscode-extensions; [
-        jdinhlife.gruvbox
-        vscodevim.vim
-        yzhang.markdown-all-in-one
-        bbenoist.nix
-        vscode-icons-team.vscode-icons
-        ms-vscode.cpptools
-      ] 
-      ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-          {
-            name = "kdl";
-            publisher = "kdl-org";
-            version = "2.1.3";
-            sha256 = "sha256-Jssmb5owrgNWlmLFSKCgqMJKp3sPpOrlEUBwzZSSpbM=";
-          }
-      ];
-    };
+    #   extensions = 
+    #   with pkgs.vscode-extensions; [
+    #     jdinhlife.gruvbox
+    #     vscodevim.vim
+    #     yzhang.markdown-all-in-one
+    #     bbenoist.nix
+    #     vscode-icons-team.vscode-icons
+    #     ms-vscode.cpptools
+    #     tomoki1207.pdf
+    #   ] 
+    #   ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+    #       {
+    #         name = "kdl";
+    #         publisher = "kdl-org";
+    #         version = "2.1.3";
+    #         sha256 = "sha256-Jssmb5owrgNWlmLFSKCgqMJKp3sPpOrlEUBwzZSSpbM=";
+    #       }
+
+    #       {
+    #         name = "openai.chatgpt";
+    #         publisher = "openai";
+    #         version = "26.5429.30905";
+    #         sha256 = "sha256-Jssmb5owrgNWlmLFSKCgqMJKp3sPpOrlEUBwzZSSpbM=";
+    #       }
+    #   ];
+    # };
+    environment.systemPackages = [
+      pkgs.vscode-fhs
+    ];
   };
 }

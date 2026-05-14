@@ -16,6 +16,8 @@
       boot.kernelModules = [ "kvm-amd" ];
       boot.extraModulePackages = [ ];
 
+      hardware.bluetooth.enable = true;
+
       fileSystems."/" =
         { device = "/dev/disk/by-uuid/a899b021-32d6-43a0-9e40-1950b61f3a11";
           fsType = "ext4";

@@ -7,6 +7,7 @@
       inetutils
       net-tools
       wireshark
+      busybox
     ];
 
     programs.wireshark.enable = true;
