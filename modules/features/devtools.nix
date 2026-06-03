@@ -17,6 +17,10 @@
       pkg-config
 
       # rust
+      cargo
+      rustc
+      clippy
+      rustfmt
       rustup
 
       # haskell

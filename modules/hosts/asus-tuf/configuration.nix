@@ -22,6 +22,9 @@
     # Enable networking
     networking.networkmanager.enable = true;
 
+    networking.firewall.enable = true;
+    networking.firewall.allowedTCPPorts = [ 5173 8787];
+
     # Set your time zone.
     time.timeZone = "Europe/London";
 

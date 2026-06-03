@@ -4,7 +4,8 @@
       inputs.hjem.nixosModules.default
       self.nixosModules.hjem-dorian
 
-      self.nixosModules.asus-tuf-configuration 
+      self.nixosModules.asus-tuf-configuration
+      self.nixosModules.nvidia
 
       self.nixosModules.niri
       self.nixosModules.noctalia
